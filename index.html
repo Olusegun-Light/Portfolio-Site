@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Syle Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <title>Olusegun Light Portfolio</title>
+</head>
+
+<body>
+    <div id="hero" class="">
+
+
+        <div id="" class="bg-babyBlue">
+            <nav class="container relative mx-auto p-6">
+                <!-- Flex Container For Nav Items -->
+                <div class="flex items-center justify-between space-x-20 my-6">
+                    <!-- Logo -->
+                    <div class="z-30">
+                        <!-- z-30 -> Logo to always be ontop in mobile menu  -->
+                        <p class="text-bold text-2xl text-softBlue md:text-4xl">Olusegun Light</p>
+                    </div>
+
+                    <!-- Menu Items -->
+                    <div class="hidden items-center  space-x-10 uppercase text-grayishBlue md:flex">
+                        <a href="#home" class="tracking-widest text-softBlue">Home</a>
+                        <a href="#project" class="tracking-widest hover:text-softBlue">Projects</a>
+                        <a href="#about" class="tracking-widest hover:text-softBlue">About ME</a>
+
+
+                        <a href="https://rxresu.me/light/olusegun-light/build" target="_blank"
+                            class="px-8 py-2 text-black bg-softBlue border-2 border-softBlue rounded-lg shadow-md hover:text-softBlue hover:bg-white">CV</a>
+                    </div>
+
+                    <!-- Hamburger Button -->
+                    <button id="menu-btn" class="z-30 block md:hidden focus:outline-none hamburger">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div id="menu" class="fixed inset-0 z-20 hidden  flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24
+                    pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue">
+
+                    <div class="w-full py-3 text-center">
+                        <a href="#home" class="block hover:text-softBlue">Home</a>
+                    </div>
+                    <div class="w-full py-3 text-center">
+                        <a href="#project" class="block hover:text-softBlue">Projects</a>
+                    </div>
+                    <div class="w-full py-3 text-center">
+                        <a href="#about" class="block hover:text-softBlue">About Me</a>
+                    </div>
+                    <div class="w-full py-3 text-center">
+                        <a href="https://rxresu.me/light/olusegun-light/build" target="_blank"
+                            class="block hover:text-softBlue">CV</a>
+                    </div>
+                </div>
+
+            </nav>
+
+
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <!-- Container For Image & Content -->
+                <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
+                    <!-- Content -->
+                    <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+                        <h1 class="text-3xl pt-20 font-semibold text-center lg:text-6xl lg:text-left">
+                            Olusegun Light
+                        </h1>
+                        <p
+                            class="max-w-md mx-auto text-lg text-center text-gray-600 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0">
+                            I'm a highly experienced full-stack web developer specializing in developing custom websites
+                            to deliver impactful results.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Image -->
+                    <div class="relative mx-auto lg:mx-0 lg:w-1/2">
+                        <div class="bg-hero"></div>
+                        <img src="images/hero-img.png" alt=""
+                            class="relative z-10 lg:top-24 xl:top-0 overfloe-x-visible">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Project Heading -->
+        <section id="project">
+            <div class="container mx-auto mt-16 px-6">
+                <h2 class="mb-6 text-4xl font-semibold text-center">
+                    Projects
+                </h2>
+
+                <p class="max-w-md mx-auto text-center text-grayishBlue">
+                    Projects we have resently completed
+                </p>
+            </div>
+        </section>
+
+        <!-- Project Tabs -->
+        <section id="tabs">
+            <!-- Tabs/Panels Container -->
+            <div class="container relative mx-auto my-6 mb-12 px-6">
+                <div class="bg-tabs"></div>
+                <!-- Tabs Flex Container -->
+                <div class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row">
+                    <!-- Tab 1 -->
+                    <div class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softBlue md:w-1/3 tab"
+                        data-target="panel-1">
+                        <div class="py-5 border-b-4 border-softBlue" data-target="panel-1">
+                            Frontend Projects
+                        </div>
+                    </div>
+
+                    <!-- Tab 2 -->
+                    <div class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-softBlue md:w-1/3 tab"
+                        data-target="panel-2">
+                        <div class="py-5" data-target="panel-2">
+                            Backend Projects
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Tabs/Pannel Section -->
+            <!-- Tab 1 -->
+            <section id="panels" class="">
+                <!-- Frontend Project Container 1 -->
+                <div class="container mx-auto px-6 pb-16 panel panel-1">
+                    <!-- Boxes Container -->
+                    <div class="relative flex flex-col w-full space-y-6 md:flex-row  md:space-y-0
+                        md:space-x-12">
+
+                        <!-- Box 1 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg  bg-gray-100  md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/fylo.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://fylo-six-weld.vercel.app/" target="_blank"
+                                class="flex text-softBlue text-lg">Fylo
+                                website with
+                                color picker</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                Fylo is a landing page designed to provide users with a user-friendly platform for
+                                storing, sharing, and accessing files from any location and at any time. By utilizing
+                                this platform, users can efficiently manage their files while enjoying a seamless
+                                experience. With Fylo, file storage and sharing have never been easier.
+                            </p>
+                        </div>
+
+                        <!-- Box 2 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100  md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/bookmark.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://bookmark-website-omega.vercel.app/" target="_blank"
+                                class="flex text-softBlue">Bookmark
+                                manager website</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                The Bookmark Manager landing page is a platform that provides a user-friendly solution
+                                for organizing bookmarks, making it easy to access and manage them from anywhere. With
+                                its innovative design and advanced functionality, the Bookmark Manager landing page is
+                                the go-to tool for anyone looking to streamline their workflow and boost their
+                                productivity.
+                            </p>
+                        </div>
+
+
+                        <!-- Box 3 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/clipboard.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://clipboard-hazel.vercel.app/" target="_blank"
+                                class="flex text-softBlue">Clipboard
+                                Website</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                With the Clipboard landing page, users can conveniently keep track of their snippets
+                                across multiple devices. This user-friendly platform provides an efficient and seamless
+                                solution for organizing and tracking snippets, making it easy to access and manage them
+                                from anywhere. By using the Clipboard landing page, users can effectively streamline
+                                their workflow and improve their productivity.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Frontend Project Container 2 -->
+                    <div class="relative flex flex-col  pt-7 w-full space-y-6 md:flex-row md:pt-12  md:space-y-0
+                        md:space-x-12">
+
+                        <!-- Box 4 -->
+                        <div class="flex flex-col p-10  space-y-6 rounded-lg bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/loopstudio.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://loop-studio-nine.vercel.app/" target="_blank"
+                                class="flex text-softBlue">Loopstudio
+                                Website</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                Loopstudio is a website that showcases the breathtaking creations of a VR company,
+                                providing visitors with an opportunity to experience the wonders of virtual reality. The
+                                platform offers an immersive and visually stunning experience, with its cutting-edge
+                                technology and incredible attention to detail.
+                            </p>
+                        </div>
+
+                        <!-- Box 5 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/shortly.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://shortly-lyart.vercel.app/" target="_blank"
+                                class="flex text-softBlue">Shortly Website</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                Shortly is a user-friendly website that streamlines the process of sharing links by
+                                shortening them, resulting in an improved user experience. Its efficient functionality
+                                and simple design make it a go-to tool for anyone looking to simplify link sharing.
+                            </p>
+                        </div>
+
+
+                        <!-- Box 6 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/testimonial.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://testiminial-grid.vercel.app/" target="_blank"
+                                class="flex text-softBlue">Testimonail
+                                grid</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                A testimonial grid 2D layout template is a pre-designed layout that allows you to
+                                showcase multiple customer testimonials in a visually appealing manner. The 2D layout
+                                adds
+                                depth and visual interest to the grid, making it stand out and catch the attention of
+                                your website visitors. By using a testimonial grid 2D layout template, you can
+                                effectively highlight the positive feedback from your customers and build trust with
+                                potential clients or customers
+                            </p>
+                        </div>
+
+                    </div>
+                </div> <!-- Frontend Container End -->
+
+
+
+                <!-- Backend Project Container 1 -->
+                <div class="container mx-auto px-6 pb-80 md:pb-96 hidden panel panel-2">
+                    <!-- Boxes Container -->
+                    <div class="relative flex flex-col  w-full space-y-6 md:flex-row  md:space-y-0
+                        md:space-x-12">
+
+                        <!-- Box 7 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg  bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/todo.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://drab-erin-monkey-cape.cyclic.app/" target="_blank"
+                                class="flex text-softBlue">To-Do List</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                A to-do list web app allows users to manage their daily tasks and activities. With
+                                workspaces for different lists, users can add, edit, and delete tasks, as well as
+                                prioritize and schedule them. This app provides a convenient way for users to stay
+                                organized and productive throughout their day-to-day activities.
+                            </p>
+                        </div>
+
+                        <!-- Box 8 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/secret.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://lime-lucky-butterfly.cyclic.app" target="_blank"
+                                class="flex text-softBlue">Secrets</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                A secrets web app allows users to share secrets anonymously with others worldwide.
+                                Passwords are encrypted using the hash and salt method for security. This app provides a
+                                safe platform for users to connect and express themselves.
+                        </div>
+
+
+                        <!-- Box 9 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/news.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://newsletter-signup-3szuje0h1-olusegun-light.vercel.app/" target="_blank"
+                                class="flex text-softBlue">News Letter Sign-Up</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                A newsletter signup page using MailChimp collects users' email addresses and saves them
+                                to a database for sending periodic updates. With MailChimp's tools, users can design and
+                                send newsletters, manage their subscriber list, and track their email campaigns. This
+                                system provides a simple way for businesses and individuals to reach and engage their
+                                audience.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Backend Project Container 2 -->
+                    <!-- Boxes Container -->
+                    <div class="relative flex flex-col  pt-7 w-full space-y-6 md:flex-row md:pt-12  md:space-y-0
+                        md:space-x-12">
+
+                        <!-- Box 10 -->
+                        <div class="flex flex-col p-10 space-y-6 rounded-lg  bg-gray-100 md:w-1/3">
+                            <!-- Image -->
+                            <div class="flex space-x-4">
+                                <img src="images/blog.png" alt="" class="w-full h-40">
+                            </div>
+                            <a href="https://ill-rose-goose-fez.cyclic.app/" target="_blank"
+                                class="flex text-softBlue">Daily Journal</a>
+                            <p class="text-sm leading-5 md:text-lg">
+                                A personal diary website allows individuals to document their experiences, thoughts, and
+                                ideas. By incorporating a database, users can store and manage their entries and track
+                                their personal growth and development over time. The website provides a platform for
+                                users to reflect on their lives and keep a record of their memories.
+                            </p>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+
+                
+
+            </section>
+
+        </section>
+    </div>
+
+
+    <!-- AboutMe Section -->
+
+    <section id="about">
+        <div class="container mx-auto px-6">
+            <h1 class="text-bold text-2xl text-softBlue text-center md:text-4xl">About Me</h1>
+            <p class="text-2sm pt-5 pb-10 text-center max-w-3xl mx-auto">As a full stack developer with two years of
+                experience, I
+                have a strong proficiency in front-end and back-end technologies, and I specialize in providing
+                high-impact web solutions for diverse industry organizations. My experience in both front-end and
+                back-end development enables me to provide comprehensive web solutions that meet the unique needs of
+                each organization.
+            </p>
+        </div>
+
+        <!-- Details Container -->
+        <div class="container mx-auto px-6 pb-40">
+            <!-- Boxes Container -->
+            <div
+                class="relative flex flex-col md:justify-center md:items-center w-full space-y-6 md:flex-row md:space-y-0 md:space-x-2">
+                <!-- Box 1 -->
+                <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/5">
+                    <!-- Image -->
+                    <div class="flex space-x-4">
+                        <img src="images/location.svg" alt="" class="w-full h-10">
+                    </div>
+                    <p class="flex mx-auto">Address</p>
+                    <p class="text-sm leading-5 text-center md:text-lg">
+                        Lagos, Nigeria.
+                    </p>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/5">
+                    <!-- Image -->
+                    <div class="flex space-x-4">
+                        <img src="images/call-us.svg" alt="" class="w-full h-10">
+                    </div>
+                    <p class="flex mx-auto">Call Us</p>
+                    <p class="text-sm leading-5 text-center md:text-lg">
+                        +234 907 569 0730
+                    </p>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/5">
+                    <!-- Image -->
+                    <div class="flex space-x-4">
+                        <img src="images/email.svg" alt="" class="w-full h-10">
+                    </div>
+                    <p class="flex mx-auto">Email</p>
+                    <p href="" class="text-sm leading-5 md:text-lg">
+                        lightolusegun1@email.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-softBlue text-black">
+        <div class="container mx-auto pt-12 px-5 pb-10">
+            <!-- Flex Container For All Items -->
+            <div class="flex flex-col justify-between space-y-24 ">
+
+                <!-- Socials -->
+                <div class="flex justify-center pb-5 space-x-3">
+                    <div>
+                        <a href="https://www.linkedin.com/in/olusegun-light-b9729a233/">
+                            <img src="images/linkedin.svg" alt="" class="p-2 bg-lightBlue rounded-full ficon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/light_senpaii_">
+                            <img src="images/twitter.svg" alt="" class="p-2  bg-lightBlue  rounded-full ficon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/Olusegun-Light">
+                            <img src="images/github.svg" alt="" class="p-2  bg-lightBlue  rounded-full ficon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://wa.me/09075690730">
+                            <img src="images/whatapp.svg" alt="" class="p-2  bg-lightBlue  rounded-full ficon">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:lightolusegun1@gmail.com">
+                            <img src="images/email-1.svg" alt="" class="p-2  bg-lightBlue  rounded-full ficon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="text-bold text-2sm text-blck text-center pb-8">&#169;Olusegun-Light.</h1>
+    </footer>
+
+
+
+
+
+
+</body>
+<script src="js/script.js" defer></script>
+
+</html>
